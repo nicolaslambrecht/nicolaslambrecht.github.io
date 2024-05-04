@@ -66,9 +66,30 @@
                     <p class="section-subtitle">Who Am I ?</p>
                     <h2 class="section-title mb-3">About Me</h2>
                     <p>
-                        I am a third-year Computer Science student at HOGENT, driven by a passion for cybersecurity, DevOps methodologies, AI technologies and the intricate world of IT infrastructure and operations. Driven by a relentless pursuit of knowledge and a commitment to excellence, I am constantly seeking new opportunities to expand my skill set, tackle complex challenges and contribute meaningfully to the ever-evolving landscape of technology.
+                        I am a third-year Computer Science student at HOGENT, driven by a passion for <strong>cybersecurity, DevOps methodologies, AI technologies and the intricate world of IT infrastructure and operations.</strong> Driven by a relentless pursuit of knowledge and a commitment to excellence, I am constantly seeking new opportunities to expand my skill set, tackle complex challenges and contribute meaningfully to the ever-evolving landscape of technology.
+
+                        During my spare time I'm part of scouts Zwalm where I'm the head leader for well over two years now!
                     </p>
-                    <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
+                    <button class="btn-rounded btn btn-outline-primary mt-4" onclick="downloadCV()">Download CV</button>
+
+                    <script>
+                        function downloadCV() {
+                            // Replace 'your_cv_file_path' with the actual path to your CV file
+                            var cvFilePath = "assets/NicolasLambrechtCV.pdf";
+                            // Create an anchor element
+                            var link = document.createElement('a');
+                            // Set the href attribute to the file path
+                            link.href = cvFilePath;
+                            // Set the download attribute to specify the file name
+                            link.download = 'NicolasLambrechtCV.pdf'; // Change 'your_cv_file_name' accordingly
+                            // Append the anchor element to the body
+                            document.body.appendChild(link);
+                            // Trigger a click event to start downloading
+                            link.click();
+                            // Remove the anchor element from the body
+                            document.body.removeChild(link);
+                        }
+                    </script>
                 </div>              
             </div><!-- end of about wrapper -->
         </div><!-- end of container -->
@@ -86,8 +107,8 @@
                         <img src="assets/imgs/folio-1.jpg" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>Web Designing</h5>
-                                <p class="font-weight-normal">Category: Web Templates</p>
+                                <h4>DevOps Project</h5>
+                                <p class="font-weight-normal">@HOGENT</p>
                             </span>                         
                         </span>                     
                     </a>
@@ -97,8 +118,8 @@
                         <img class="portfolio-card-img" src="assets/imgs/folio-2.jpg" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>Web Designing</h5>
-                                <p class="font-weight-normal">Category: Web Templates</p>
+                                <h4>System Enigneering Project</h5>
+                                <p class="font-weight-normal">@HOGENT</p>
                             </span>                         
                         </span>                         
                     </a>
@@ -108,8 +129,8 @@
                         <img class="portfolio-card-img" src="assets/imgs/folio-3.jpg" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>Web Designing</h5>
-                                <p class="font-weight-normal">Category: Web Templates</p>
+                                <h4>Various small side projects</h5>
+                                <p class="font-weight-normal">@HOME</p>
                             </span>                         
                         </span>                     
                     </a>
@@ -133,7 +154,7 @@
                         <input type="email" class="form-control" placeholder="Enter Email"requried>                 
                     </div>
                     <div class="form-group col-sm-12">
-                        <textarea name="comment" id="comment" rows="6"   class="form-control" placeholder="Write Something"></textarea>
+                        <textarea name="comment" id="comment" rows="6"   class="form-control" placeholder="Message"></textarea>
                     </div>
                     <div class="form-group col-sm-12 mt-3">
                         <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">                  
@@ -148,9 +169,10 @@
         <footer class="footer">       
             <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; Nicolas Lambrecht</a></p>
             <div class="social-links text-right m-auto ml-sm-auto">
-                <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-github"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
+                <a id="linkedinLink" href="https://www.linkedin.com/in/nicolaslambrecht/" target="_blank"><i class="ti-linkedin"></i></a>
+                <a id="facebookLink" href="https://www.facebook.com/nicoolambrecht/" target="_blank"><i class="ti-facebook"></i></a>
+                <a id="githubLink" href="https://www.github.com/nicolaslambrecht/" target="_blank"><i class="ti-github"></i></a>
+                <a id="instagramLink" href="https://www.instagram.com/nicolas.lambrecht/" target="_blank"><i class="ti-instagram"></i></a>
             </div>
         </footer>
     </div> <!-- end of page footer -->
