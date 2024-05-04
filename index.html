@@ -157,6 +157,19 @@
         </div><!-- end of container -->
     </section><!-- end of contact section -->
 
+    <script>
+        // Function to show the popup
+        function showMessage() {
+            window.alert("We're verry sorry, but this function hasn't been activated yet. Please consult the contact links in the lower right-hand corner of the screen, thank you!");
+        }
+    
+        // Event listener for the form submission
+        document.getElementById("contact").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the form from submitting
+            showMessage(); // Show the popup
+        });
+    </script>
+
     <!-- footer -->
     <div class="container">
         <footer class="footer">       
