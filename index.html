@@ -74,19 +74,12 @@
 
                     <script>
                         function downloadCV() {
-                            // Replace 'your_cv_file_path' with the actual path to your CV file
                             var cvFilePath = "assets/NicolasLambrechtCV.pdf";
-                            // Create an anchor element
                             var link = document.createElement('a');
-                            // Set the href attribute to the file path
                             link.href = cvFilePath;
-                            // Set the download attribute to specify the file name
-                            link.download = 'NicolasLambrechtCV.pdf'; // Change 'your_cv_file_name' accordingly
-                            // Append the anchor element to the body
+                            link.download = 'NicolasLambrechtCV.pdf'; 
                             document.body.appendChild(link);
-                            // Trigger a click event to start downloading
                             link.click();
-                            // Remove the anchor element from the body
                             document.body.removeChild(link);
                         }
                     </script>
@@ -167,7 +160,7 @@
     <!-- footer -->
     <div class="container">
         <footer class="footer">       
-            <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; Nicolas Lambrecht</a></p>
+            <p class="mb-0"><script>document.write(new Date().getFullYear())</script> &copy; Nicolas Lambrecht | All rights reserverd</a></p>
             <div class="social-links text-right m-auto ml-sm-auto">
                 <a id="linkedinLink" href="https://www.linkedin.com/in/nicolaslambrecht/" target="_blank"><i class="ti-linkedin"></i></a>
                 <!--<a id="facebookLink" href="https://www.facebook.com/nicoolambrecht/" target="_blank"><i class="ti-facebook"></i></a>-->
