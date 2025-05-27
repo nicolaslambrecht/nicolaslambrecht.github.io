@@ -1,198 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Meyawo landing page.">
-    <meta name="author" content="Devcrud">
-    <title>Portfolio | Nicolas</title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + Meyawo main styles -->
-	<link rel="stylesheet" href="assets/css/meyawo.css">
-    <link rel="icon" href="assets/imgs/person.png" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>We'll Be Back Soon!</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+<body class="bg-yellow-50 flex items-center justify-center h-screen font-sans">
+  <div class="text-center px-6">
+    <div class="text-6xl mb-4 animate-bounce">🚧</div>
+    <h1 class="text-4xl font-bold text-yellow-800">Under Maintenance</h1>
+    <p class="mt-4 text-lg text-yellow-700">We're building something awesome! 🚀</p>
+    <div class="mt-6 inline-flex items-center text-yellow-600">
+      <svg class="animate-spin h-6 w-6 mr-2 text-yellow-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"/>
+        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/>
+      </svg>
+      <span class="text-md">Please grab a coffee and check back soon!</span>
+    </div>
+    <div class="mt-10 text-5xl animate-wiggle">👷‍♂️</div>
+  </div>
 
-    <!-- Page Navbar -->
-    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
-        <div class="container">
-            <a class="logo" href="#">NICOLAS</a>         
-            <ul class="nav">
-                <li class="item">
-                    <a class="link" href="#home">Home</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#about">About</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#portfolio">Portfolio</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#contact">Contact</a>
-                </li>
-            </ul>
-            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
-                <div class="hamburger-box">
-                  <div class="hamburger-inner"></div>
-                </div>
-            </a>
-        </div>          
-    </nav><!-- End of Page Navbar -->
-
-    <!-- page header -->
-    <header id="home" class="header">
-        <div class="overlay"></div>
-        <div class="header-content container">
-            <h1 class="header-title">
-                <span class="up">HI!</span>
-                <span class="down">I am Nicolas Lambrecht</span>
-            </h1>
-            <p class="header-subtitle">APPLIED COMPUTER SCIENCE</p>            
-
-        </div>              
-    </header><!-- end of page header -->
-
-    <!-- about section -->
-    <section class="section pt-0" id="about">
-        <!-- container -->
-        <div class="container text-center">
-            <!-- about wrapper -->
-            <div class="about">
-                <div class="about-img-holder">
-                    <img src="assets/imgs/nicolaspng.png" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                </div>
-                <div class="about-caption">
-                    <p class="section-subtitle">Who Am I ?</p>
-                    <h2 class="section-title mb-3">About Me</h2>
-                    <p>
-                        I am a third-year Computer Science student at HOGENT, driven by a passion for <strong>cybersecurity, DevOps methodologies, AI technologies and the intricate world of IT infrastructure and operations.</strong> Driven by a relentless pursuit of knowledge and a commitment to excellence, I am constantly seeking new opportunities to expand my skill set, tackle complex challenges and contribute meaningfully to the ever-evolving landscape of technology.
-
-                        During my spare time I'm part of scouts Zwalm where I've been the head leader for well over two years now!
-                    </p>
-                    <button class="btn-rounded btn btn-outline-primary mt-4" onclick="downloadCV()">Download CV</button>
-
-                    <script>
-                        function downloadCV() {
-                            var cvFilePath = "assets/Resume_Nicolas_final.pdf";
-                            var link = document.createElement('a');
-                            link.href = cvFilePath;
-                            link.download = 'NicolasLambrechtResume.pdf'; 
-                            document.body.appendChild(link);
-                            link.click();
-                            document.body.removeChild(link);
-                        }
-                    </script>
-                </div>              
-            </div><!-- end of about wrapper -->
-        </div><!-- end of container -->
-    </section> <!-- end of about section -->
-
-    <!-- portfolio section -->
-    <section class="section" id="portfolio">
-        <div class="container text-center">
-            <p class="section-subtitle">What I Did ?</p>
-            <h6 class="section-title mb-6">Portfolio</h6>
-            <!-- row -->
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img src="assets/imgs/devops.jpg" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>DevOps Project @HOGENT</h5>
-                                <p class="font-weight-normal">Supporting the dev team by developing a cloud staging and prodcution environment where changes can be pushed.</p>
-                            </span>                         
-                        </span>                     
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/sys-eng2.png" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>System Engineering Project @HOGENT</h5>
-                                <p class="font-weight-normal">Developing a local network with features such as a mail server, matrix chat room and various other things.</p>
-                            </span>                         
-                        </span>                         
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/proj.jpg" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Various small side projects @HOME</h5>
-                                <p class="font-weight-normal">This portfolio,...</p>
-                            </span>                         
-                        </span>                     
-                    </a>
-                </div>
-            </div><!-- end of row -->
-        </div><!-- end of container -->
-    </section> <!-- end of portfolio section -->
-
-    <!-- contact section -->
-    <section class="section" id="contact">
-        <div class="container text-center">
-            <p class="section-subtitle">How can you communicate?</p>
-            <h6 class="section-title mb-5">Contact Me</h6>
-            <!-- contact form -->
-            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
-                <div class="form-row">
-                    <div class="form-group col-sm-6">
-                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>                 
-                    </div>
-                    <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" placeholder="Enter Email"requried>                 
-                    </div>
-                    <div class="form-group col-sm-12">
-                        <textarea name="comment" id="comment" rows="6"   class="form-control" placeholder="Message"></textarea>
-                    </div>
-                    <div class="form-group col-sm-12 mt-3">
-                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">                  
-                    </div>
-                </div>  
-            </form><!-- end of contact form -->
-        </div><!-- end of container -->
-    </section><!-- end of contact section -->
-
-    <script>
-        // Function to show the popup
-        function showMessage() {
-            window.alert("We're verry sorry, but this function hasn't been activated yet. Please consult the contact links in the lower right-hand corner of the screen, thank you!");
-        }
-    
-        // Event listener for the form submission
-        document.getElementById("contact").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent the form from submitting
-            showMessage(); // Show the popup
-        });
-    </script>
-
-    <!-- footer -->
-    <div class="container">
-        <footer class="footer">       
-            <p class="mb-0"><script>document.write(new Date().getFullYear())</script> &copy; Nicolas Lambrecht | All rights reserved</a></p>
-            <div class="social-links text-right m-auto ml-sm-auto">
-                <a id="linkedinLink" href="https://www.linkedin.com/in/nicolaslambrecht/" target="_blank"><i class="ti-linkedin"></i></a>
-                <!--<a id="facebookLink" href="https://www.facebook.com/nicoolambrecht/" target="_blank"><i class="ti-facebook"></i></a>-->
-                <a id="githubLink" href="https://www.github.com/nicolaslambrecht/" target="_blank"><i class="ti-github"></i></a>
-                <!--<a id="instagramLink" href="https://www.instagram.com/nicolas.lambrecht/" target="_blank"><i class="ti-instagram"></i></a>-->
-                <a id="mailLink" href="mailto:nicolas.lambrecht2709@gmail.com"><i class="ti-email"></i></a>
-            </div>
-        </footer>
-    </div> <!-- end of page footer -->
-	
-	<!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- bootstrap 3 affix -->
-	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- Meyawo js -->
-    <script src="assets/js/meyawo.js"></script>
-
+  <style>
+    @keyframes wiggle {
+      0%, 100% { transform: rotate(-5deg); }
+      50% { transform: rotate(5deg); }
+    }
+    .animate-wiggle {
+      animation: wiggle 1s infinite;
+    }
+  </style>
 </body>
 </html>
